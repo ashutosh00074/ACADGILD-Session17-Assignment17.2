@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efedef"
+    tools:context="com.tech.gigabyte.boundservice.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="end"
+        android:text="@string/time"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40sp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="bottom"
+        android:text="@string/date"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView_current_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:hint="@string/time_label"
+        android:textColor="#ee6f64"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button_start_service"
+        android:layout_width="200sp"
+        android:layout_height="60sp"
+        android:layout_centerInParent="true"
+        android:background="#e54048"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="getcurrenttime"
+        android:text="@string/show_time"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
